@@ -7,7 +7,7 @@ import caloriecalc.LanchIO;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Main {
+public class JavaAplication1 {
 //Scanner init
    static final Scanner sc0 = new Scanner(System.in);
    static final Scanner sc = new Scanner(System.in);
