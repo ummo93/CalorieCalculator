@@ -50,7 +50,7 @@ public class DinnerIO {
    }
 
    public void firstDiFoodName(String FirstDiFoodName) {
-      FirstDiFoodName = FirstDiFoodName;
+      this.FirstDiFoodName = FirstDiFoodName;
    }
 
    public void firstDiFoodCal(int FirstDiFoodCal) {

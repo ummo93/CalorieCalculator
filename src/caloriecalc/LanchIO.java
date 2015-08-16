@@ -50,7 +50,7 @@ public class LanchIO {
    }
 
    public void firstLaFoodName(String FirstLaFoodName) {
-      FirstLaFoodName = FirstLaFoodName;
+      this.FirstLaFoodName = FirstLaFoodName;
    }
 
    public void firstLaFoodCal(int FirstLaFoodCal) {
