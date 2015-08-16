@@ -30,26 +30,38 @@ public class Main {
               + "клавишу:");
       
       sc0.nextLine();
+      
       System.out.println("Введите текущую дату в формате dd.mm.yy: ");
+      
       userInputDate();
+      
       userChoose1Processing();
+      
       int Accumulator = DinnerIO.sum1 + BreakfastIO.sum2 + LanchIO.sum;
+      
       String List = "\n" + LanchIO.sumName + "\n" + DinnerIO.sumName1 + "\n" 
               + BreakfastIO.sumName2;
+      
       System.out.println("\nВсего на " + date + " было съедено: " + List);
+      
       System.out.println("\nОбщий калораж за день составил: " + Accumulator 
               + " (Ккал)");
+      
       String text = "\nВсего на " + date + " было съедено: " + List + "\n" 
               + "\nОбщий калораж за день составил: " + Accumulator + " (Ккал)";
+      
       System.out.println("\nХотите сохранить отчёт? Если да, нажмите "
               + "Y или N, чтобы отказаться");
+      
       String Choose1 = sc1.nextLine();
+      
       if(Choose1.matches("(?i).*[Yy].*")) {
          System.out.println("\nУкажите папку, куда сохранить файл в "
                  + "формате \'\'C:/Program Files/\'\'");
          String DirChoose = sc2.nextLine();
          String fileName = DirChoose + date + ".txt";
          FileWorker.write(fileName, text);
+         
       } else {
          System.out.println("До скорой встречи!");
       }
@@ -57,6 +69,7 @@ public class Main {
    }
 
    public static void userInputDate() {
+       
       date = InputDate.nextLine();
       if(date.matches("(?i).*[/*].*")) {
          System.out.println("\nВы ввели недопустимый символ, дата будет "
@@ -67,6 +80,7 @@ public class Main {
    }
 
    public static void userChoose1Processing() {
+       
       for(int i = 0; i < 3; ++i) {
          System.out.println("\nКакой приём пищи вы хотите ввести?"
                  + "\n 1 - завтрак, 2 - обед, 3 - ужин.\n\nУ вас есть " 
